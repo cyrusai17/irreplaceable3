@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irreplaceable - Final Manifesto Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles specific to the manifesto page */
+        .manifesto-header {
+            text-align: center;
+            padding: 6rem 0 3rem;
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+        }
+        
+        .manifesto-header h1 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .manifesto-header p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            color: #666;
+        }
+        
+        .manifesto-container {
+            padding: 4rem 0;
+        }
+        
+        .manifesto-intro {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .manifesto-intro p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        
+        .manifesto-structure {
+            margin-bottom: 4rem;
+        }
+        
+        .structure-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .structure-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+        
+        .structure-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .structure-card i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .structure-card h3 {
+            margin-bottom: 1rem;
+        }
+        
+        .manifesto-examples {
+            background-color: #f9f9f9;
+            padding: 4rem 0;
+            margin-top: 4rem;
+        }
+        
+        .example-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 2rem;
+        }
+        
+        .example-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .example-card p {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .example-meta {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        
+        .example-author {
+            font-weight: 600;
+            margin-right: 1rem;
+        }
+        
+        .example-role {
+            color: #666;
+        }
+        
+        .manifesto-support {
+            margin-top: 4rem;
+        }
+        
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .support-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+        
+        .support-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .support-card i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .back-to-home {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .back-to-home:hover {
+            color: var(--accent-color);
+        }
+        
+        .back-to-home i {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Manifesto Header -->
+    <section class="manifesto-header">
+        <div class="container">
+            <h1 class="fade-in">Your Final Manifesto Project</h1>
+            <p class="fade-in">Culminate your learning journey by creating a powerful declaration of your unique human value proposition.</p>
+            <a href="index.html" class="back-to-home fade-in">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </section>
+
+    <!-- Manifesto Introduction -->
+    <section class="manifesto-container">
+        <div class="container">
+            <div class="manifesto-intro fade-in">
+                <h2>What is Your Manifesto?</h2>
+                <p>Your manifesto is more than just a final project—it's a powerful declaration of your unique human value proposition in the age of AI. It's where you'll synthesize everything you've learned, articulate your vision for human excellence, and create a blueprint for your continued growth and impact.</p>
+            </div>
+
+            <!-- Manifesto Structure -->
+            <div class="manifesto-structure">
+                <h2 class="fade-in">Structure Your Manifesto</h2>
+                <div class="structure-grid">
+                    <div class="structure-card fade-in">
+                        <i class="fas fa-history"></i>
+                        <h3>Your Journey</h3>
+                        <p>Reflect on your personal evolution through the course and how your understanding of human uniqueness has transformed.</p>
+                    </div>
+                    <div class="structure-card fade-in">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Core Insights</h3>
+                        <p>Articulate the key learnings and revelations that have shaped your perspective on human potential.</p>
+                    </div>
+                    <div class="structure-card fade-in">
+                        <i class="fas fa-compass"></i>
+                        <h3>Future Vision</h3>
+                        <p>Outline your vision for how you'll leverage your human strengths in your personal and professional life.</p>
+                    </div>
+                    <div class="structure-card fade-in">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Commitment</h3>
+                        <p>Declare your commitment to ongoing growth and your role in fostering human excellence in others.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Manifesto Examples -->
+            <div class="manifesto-examples">
+                <h2 class="fade-in">Manifesto Examples</h2>
+                <div class="example-card fade-in">
+                    <h3>The Empathetic Innovator</h3>
+                    <p>"I commit to bringing deep empathy and creative judgment to every innovation I create. I will ensure that technology serves human needs and values, not the other way around."</p>
+                    <div class="example-meta">
+                        <span class="example-author">Sarah Chen</span>
+                        <span class="example-role">Product Designer</span>
+                    </div>
+                </div>
+                <div class="example-card fade-in">
+                    <h3>The Ethical Leader</h3>
+                    <p>"I will lead with unwavering ethical clarity and emotional intelligence. My decisions will always prioritize human dignity and long-term societal impact over short-term gains."</p>
+                    <div class="example-meta">
+                        <span class="example-author">Marcus Rodriguez</span>
+                        <span class="example-role">Executive Director</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support and Resources -->
+            <div class="manifesto-support">
+                <h2 class="fade-in">Support & Resources</h2>
+                <div class="support-grid">
+                    <div class="support-card fade-in">
+                        <i class="fas fa-comments"></i>
+                        <h3>Peer Review</h3>
+                        <p>Get feedback from fellow students and refine your manifesto through structured peer review sessions.</p>
+                    </div>
+                    <div class="support-card fade-in">
+                        <i class="fas fa-user-graduate"></i>
+                        <h3>Mentor Guidance</h3>
+                        <p>Work with course mentors to develop and refine your manifesto through 1:1 sessions.</p>
+                    </div>
+                    <div class="support-card fade-in">
+                        <i class="fas fa-book"></i>
+                        <h3>Resource Library</h3>
+                        <p>Access curated resources, templates, and examples to help shape your manifesto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Stay Connected</h4>
+                    <form class="signup-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Irreplaceable. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

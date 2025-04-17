@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irreplaceable - Apply for Cohort</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles specific to the cohort application page */
+        .cohort-header {
+            text-align: center;
+            padding: 6rem 0 3rem;
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+        }
+        
+        .cohort-header h1 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .cohort-header p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            color: #666;
+        }
+        
+        .cohort-container {
+            padding: 4rem 0;
+        }
+        
+        .cohort-intro {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .cohort-intro p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        
+        .cohort-benefits {
+            margin-bottom: 4rem;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .benefit-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .benefit-card i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .application-form {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+            margin-top: 3rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .back-to-home {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .back-to-home:hover {
+            color: var(--accent-color);
+        }
+        
+        .back-to-home i {
+            margin-right: 0.5rem;
+        }
+        
+        .cohort-details {
+            margin: 4rem 0;
+            padding: 2rem;
+            background: #f9f9f9;
+            border-radius: 10px;
+        }
+        
+        .details-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .details-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .details-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cohort Header -->
+    <section class="cohort-header">
+        <div class="container">
+            <h1 class="fade-in">Apply for Cohort Program</h1>
+            <p class="fade-in">Join a transformative learning experience with dedicated mentorship and peer support.</p>
+            <a href="index.html" class="back-to-home fade-in">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="cohort-container">
+        <div class="container">
+            <!-- Introduction -->
+            <div class="cohort-intro fade-in">
+                <h2>Transform Your Human Potential</h2>
+                <p>Our cohort program offers an intensive, guided journey to develop your uniquely human capabilities. Work alongside like-minded individuals, receive personalized mentorship, and engage in deep learning that will prepare you to thrive in the age of AI.</p>
+            </div>
+
+            <!-- Cohort Benefits -->
+            <div class="cohort-benefits">
+                <h2 class="fade-in">Why Choose the Cohort Experience?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card fade-in">
+                        <i class="fas fa-users"></i>
+                        <h3>Peer Learning</h3>
+                        <p>Learn alongside ambitious professionals who share your commitment to personal growth and human excellence.</p>
+                    </div>
+                    <div class="benefit-card fade-in">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Expert Mentorship</h3>
+                        <p>Receive personalized guidance from experienced mentors who will help you navigate your learning journey.</p>
+                    </div>
+                    <div class="benefit-card fade-in">
+                        <i class="fas fa-comments"></i>
+                        <h3>Live Discussions</h3>
+                        <p>Engage in weekly live sessions that deepen your understanding through real-time interaction and dialogue.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cohort Details -->
+            <div class="cohort-details fade-in">
+                <h2>Program Details</h2>
+                <ul class="details-list">
+                    <li>8-week intensive program</li>
+                    <li>Weekly live sessions (2 hours each)</li>
+                    <li>1:1 mentorship sessions (bi-weekly)</li>
+                    <li>Private cohort community</li>
+                    <li>Personalized feedback on assignments</li>
+                    <li>Final project presentation</li>
+                    <li>Certificate of completion</li>
+                </ul>
+                <p style="margin-top: 2rem;"><strong>Investment:</strong> $1,500</p>
+            </div>
+
+            <!-- Application Form -->
+            <div class="application-form fade-in">
+                <h2>Cohort Application</h2>
+                <p>Please complete the form below to apply for our next cohort. We'll review your application and contact you within 3 business days.</p>
+                
+                <form id="cohort-application-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="current-role">Current Role</label>
+                        <input type="text" id="current-role" name="current-role" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experience">Years of Professional Experience</label>
+                        <select id="experience" name="experience" required>
+                            <option value="">Select years of experience</option>
+                            <option value="0-2">0-2 years</option>
+                            <option value="3-5">3-5 years</option>
+                            <option value="6-10">6-10 years</option>
+                            <option value="10+">10+ years</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="motivation">What motivates you to join the cohort program?</label>
+                        <textarea id="motivation" name="motivation" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="goals">What specific goals do you hope to achieve through this program?</label>
+                        <textarea id="goals" name="goals" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="challenges">What are the biggest challenges you face in developing your human capabilities?</label>
+                        <textarea id="challenges" name="challenges" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cohort-preference">Preferred Cohort Start Date</label>
+                        <select id="cohort-preference" name="cohort-preference" required>
+                            <option value="">Select preferred start date</option>
+                            <option value="june">June 2024</option>
+                            <option value="july">July 2024</option>
+                            <option value="august">August 2024</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="margin-top: 2rem; width: 100%;">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Stay Connected</h4>
+                    <form class="signup-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Irreplaceable. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

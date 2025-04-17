@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irreplaceable - Learning Options</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles specific to the learning options page */
+        .options-header {
+            text-align: center;
+            padding: 6rem 0 3rem;
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+        }
+        
+        .options-header h1 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .options-header p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            color: #666;
+        }
+        
+        .options-container {
+            padding: 4rem 0;
+        }
+        
+        .option-comparison {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .option-card {
+            flex: 1;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .option-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .option-header {
+            padding: 2rem;
+            text-align: center;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+        
+        .option-header h2 {
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+        
+        .option-header .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+        
+        .option-content {
+            padding: 2rem;
+            flex-grow: 1;
+        }
+        
+        .option-features {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 2rem;
+        }
+        
+        .option-features li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .option-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        
+        .option-cta {
+            text-align: center;
+            padding: 0 2rem 2rem;
+        }
+        
+        .option-details {
+            margin-top: 4rem;
+        }
+        
+        .option-details h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .detail-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+        
+        .detail-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .detail-card i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .detail-card h3 {
+            margin-bottom: 1rem;
+        }
+        
+        .back-to-home {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .back-to-home:hover {
+            color: var(--accent-color);
+        }
+        
+        .back-to-home i {
+            margin-right: 0.5rem;
+        }
+        
+        .testimonial-section {
+            background-color: #f9f9f9;
+            padding: 4rem 0;
+            margin-top: 4rem;
+        }
+        
+        .testimonial-section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background: var(--secondary-color);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .author {
+            font-weight: 600;
+        }
+        
+        .author-info {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .option-comparison {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Options Header -->
+    <section class="options-header">
+        <div class="container">
+            <h1 class="fade-in">Choose Your Learning Path</h1>
+            <p class="fade-in">Select the option that best fits your learning style, schedule, and goals.</p>
+            <a href="index.html" class="back-to-home fade-in">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </section>
+
+    <!-- Options Comparison -->
+    <section class="options-container">
+        <div class="container">
+            <div class="option-comparison">
+                <!-- Self-Paced Option -->
+                <div class="option-card fade-in">
+                    <div class="option-header">
+                        <h2>Self-Paced</h2>
+                        <div class="price">$395</div>
+                        <p>Learn at your own pace</p>
+                    </div>
+                    <div class="option-content">
+                        <ul class="option-features">
+                            <li>Lifetime access to all 8 modules</li>
+                            <li>Learn at your own pace and schedule</li>
+                            <li>Access to all course materials and resources</li>
+                            <li>Community forum access</li>
+                            <li>Final manifesto project</li>
+                            <li>Certificate of completion</li>
+                        </ul>
+                    </div>
+                    <div class="option-cta">
+                        <a href="enroll.html" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+                
+                <!-- Cohort-Based Option -->
+                <div class="option-card featured fade-in">
+                    <div class="option-header">
+                        <h2>Cohort-Based</h2>
+                        <div class="price">$1,500</div>
+                        <p>Guided learning experience</p>
+                    </div>
+                    <div class="option-content">
+                        <ul class="option-features">
+                            <li>Everything in Self-Paced option</li>
+                            <li>Live weekly group sessions</li>
+                            <li>1:1 mentorship with course facilitators</li>
+                            <li>Group accountability and support</li>
+                            <li>Private cohort community</li>
+                            <li>Personalized feedback on assignments</li>
+                            <li>Early access to new content</li>
+                        </ul>
+                    </div>
+                    <div class="option-cta">
+                        <a href="apply-cohort.html" class="btn btn-primary">Apply for Cohort</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Option Details -->
+            <div class="option-details">
+                <h2 class="fade-in">What to Expect</h2>
+                <div class="details-grid">
+                    <div class="detail-card fade-in">
+                        <i class="fas fa-laptop"></i>
+                        <h3>Learning Platform</h3>
+                        <p>Access our intuitive learning platform from any device. Watch video lessons, complete assignments, and track your progress at your convenience.</p>
+                    </div>
+                    <div class="detail-card fade-in">
+                        <i class="fas fa-users"></i>
+                        <h3>Community Support</h3>
+                        <p>Connect with fellow learners in our community forum. Share insights, ask questions, and build relationships with like-minded individuals.</p>
+                    </div>
+                    <div class="detail-card fade-in">
+                        <i class="fas fa-tasks"></i>
+                        <h3>Practical Assignments</h3>
+                        <p>Apply what you learn through hands-on assignments designed to help you develop and practice your human skills in real-world contexts.</p>
+                    </div>
+                    <div class="detail-card fade-in">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Final Project</h3>
+                        <p>Culminate your learning journey by creating a personal manifesto that articulates your unique human value proposition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="testimonial-section">
+        <div class="container">
+            <h2 class="fade-in">What Our Students Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card fade-in">
+                    <p>"The self-paced option was perfect for my busy schedule. I could work through the modules at my own pace and still felt fully supported by the community."</p>
+                    <div class="author">- Michael T.</div>
+                    <div class="author-info">
+                        <div class="author-avatar">MT</div>
+                        <div>
+                            <div class="author">Michael T.</div>
+                            <div>Self-Paced Student</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p>"The cohort experience was transformative. The live sessions and 1:1 mentorship helped me apply the concepts in ways I never would have on my own."</p>
+                    <div class="author-info">
+                        <div class="author-avatar">JL</div>
+                        <div>
+                            <div class="author">Jennifer L.</div>
+                            <div>Cohort Graduate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p>"I was skeptical about the higher price of the cohort option, but it was worth every penny. The accountability and community made all the difference in my learning journey."</p>
+                    <div class="author-info">
+                        <div class="author-avatar">RK</div>
+                        <div>
+                            <div class="author">Robert K.</div>
+                            <div>Cohort Graduate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Stay Connected</h4>
+                    <form class="signup-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Irreplaceable. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
